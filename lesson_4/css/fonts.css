@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Sriracha&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Unna:italic,700,700italic&display=swap");
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* Для мене виявилось новино, що @import треба розміщати тільки наверху, тому що валідатор може видати помилку:
+ "@import не дозволені після будь-якої валідної заяви, крім як @charset та @import." */
