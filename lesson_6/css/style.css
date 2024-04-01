@@ -1,0 +1,163 @@
+
+/* //////////////////////////////////////// ШРИФТИ /////////////////////////////////////////////// */
+@import url("fonts.css");
+
+
+
+/* //////////////////////////////////////// ОБНУЛЕННЯ /////////////////////////////////////////////// */
+@import url("reset.css");
+
+
+
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5;
+}
+header, footer{
+  text-align: center;
+}
+.title {
+  font-size: 50px;
+  color: #ff6060;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.image img{
+  max-width: 100%;
+}
+
+/* //////////////////////////////////////// FOLLOW BLOCK /////////////////////////////////////////////// */
+.hall{
+  font-family: 'Proxima Nova Rg';
+  color: #2b2929;
+}
+.hall-container{
+  max-width: 1050px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.hall .sub-title{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.hall .image{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hall .text{
+  line-height: 187.5%; /* 30/16 */
+  margin-bottom: 40px;
+}
+.hall .text p{
+  margin-bottom: 10px;
+}
+.sub-sub-title {
+  font-size: 20px;
+  line-height: 140%; /* 28/20 */
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.list {
+  margin-bottom: 40px;
+}
+.item {
+  line-height: 187.5%; /* 30/16 */
+  margin-bottom: 20px;
+  padding-left: 40px;
+  min-height: 32px;
+  background: url("../img/hall/check-list.png") 0 3px no-repeat;
+
+}
+
+
+/* //////////////////////////////////////// EDUPLAY BLOCK /////////////////////////////////////////////// */
+
+.eduplay {
+  font-family: Quicksand, sans-serif;
+  background: url("../img/eduplay/alphabet.png") center no-repeat, #914CFF url("../img/eduplay/holographic.png") 0 0 / cover no-repeat;
+  color: #fff;
+ 
+}
+.eduplay-container {
+  max-width: 1240px;
+  padding: 121px 0px;
+  margin: 0 auto;
+  background: url("../img/eduplay/kid.png") right / contain no-repeat;
+}
+.eduplay-content {
+  max-width: 600px;
+}
+.eduplay .sub-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 120%; /* 48/40 */
+}
+.eduplay .text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  line-height: 160%; /* 32/20 */
+}
+.eduplay .button {
+  background-color: #fff;
+  font-weight: 500;
+  padding: 14px 20px;
+  border-radius: 8px;
+  line-height: 156.25%; /* 25/16 */
+  color: #000;
+}
+
+/* //////////////////////////////////////// ECOMMERCE BLOCK /////////////////////////////////////////////// */
+
+
+.ecommerce {
+  font-family: Roboto, sans-serif;
+  background-color: #E3E3E3;
+  background: url("../img/ecommarce/pattern.png") bottom / contain no-repeat;
+  padding: 30px;
+}
+.ecommerce-container {
+  max-width: 1226px;
+  margin: 0 auto;
+  overflow: hidden;
+  vertical-align: top;
+  font-size: 0;
+}
+.ecommerce-content {
+  width: 55.954323%; /* 686/1226 */
+  display: inline-block;
+  vertical-align: top;
+  padding: 74px 10px;
+}
+.sub-title {
+  font-size: 74px;
+  font-weight: 300;
+  margin-bottom: 52px;
+}
+.text {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 183.333333%; /* 55/30 */
+  margin-bottom: 66px;
+}
+.button {
+  color: #fff;
+  font-size: 29px;
+ 
+  background-color: #1e2832;
+  padding: 19px 26px;
+}
+
+.ecommerce-image{
+  display: inline-block;
+  width: 44.045677%;
+  text-align: right;
+  padding: 0 10px;
+}
+.ecommerce-image img{
+  max-width: 100%;
+}
