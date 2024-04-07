@@ -1,0 +1,404 @@
+
+/* //////////////////////////////////////// ШРИФТИ /////////////////////////////////////////////// */
+@import url("fonts.css");
+
+
+
+/* //////////////////////////////////////// ОБНУЛЕННЯ /////////////////////////////////////////////// */
+@import url("reset.css");
+
+
+
+body{
+    font-family: Roboto, sans-serif;
+    background-color: #f5f5f5;
+}
+header, footer{
+  text-align: center;
+}
+.title {
+  font-size: 50px;
+  color: #ff6060;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.image img{
+  max-width: 100%;
+}
+h2{
+  font-size: 60px;
+  text-align: center;
+}
+/* //////////////////////////////////////// FOLLOW BLOCK /////////////////////////////////////////////// */
+.hall{
+  font-family: 'Proxima Nova Rg';
+  color: #2b2929;
+}
+.hall-container{
+  max-width: 1050px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.hall .sub-title{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+.hall .image{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hall .text{
+  line-height: 187.5%; /* 30/16 */
+  margin-bottom: 40px;
+}
+.hall .text p{
+  margin-bottom: 10px;
+}
+.hall .sub-sub-title {
+  font-size: 20px;
+  line-height: 140%; /* 28/20 */
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.hall .list {
+  margin-bottom: 40px;
+}
+.hall .item {
+  line-height: 187.5%; /* 30/16 */
+  margin-bottom: 10px;
+}
+.hall .item::before{
+  content: "";
+  margin-left: -45px;
+  margin-bottom: -40px;
+  width: 28px;
+  height: 28px;
+  background: url("../img/krovato/list-check.png"); /* Без position absolute встановлення блоків через псевдоклас вийшло з костилем. Сподіваюся таке рішення підійде */
+}
+/* //////////////////////////////////////// CANVAS1 BLOCK /////////////////////////////////////////////// */
+.block{
+  width: 200px;
+  height: 200px;
+  /* border: 2px solid #ff6060; */
+  display: inline-block;
+}
+
+.canvas{
+  font-size: 0;
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(120,9,121,1) 67%, rgba(0,142,255,1) 100%);
+}
+
+.canvas .start{
+  width: 200px;
+  height: 40px;
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,0,1) 100%);
+  margin-left: 500px;
+}
+.canvas .start::before{
+  display: block;
+  content: '';
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #ff0000;
+  width: 1px;
+  margin: 0 auto;
+}
+
+.canvas .block {
+  font-size: 29px;
+  color: transparent;
+  /* background: linear-gradient(90deg, rgba(205,0,255,1) 0%, rgba(43,121,9,1) 67%, rgba(241,255,0,1) 100%); */
+}
+
+.canvas .a {
+  width: 200px;
+  height: 40px;
+}
+.canvas .b {
+  height: 400px;
+  width: 20px;
+}
+.canvas .c {
+  width: 400px; 
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 740px;
+  vertical-align: middle;
+}
+.canvas .d {
+  width: 50px;
+  height: 700px;
+  border-radius: 30%;
+}
+.canvas .e {
+  width: 500px;
+  height: 700px;
+  border-radius: 26% 74% 31% 69% / 0% 100% 0% 100% 
+}
+.canvas .f {
+  margin-left: 1100px;
+}
+.canvas .g {
+  width: 800px;
+  margin-top: -1px;
+  margin-left: 500px;
+}
+.canvas .h{
+  margin-left: 550px;
+  width: 100px;
+  height: 590px;
+}
+
+.canvas .h:hover, .canvas .g:hover, .canvas .f:hover, .canvas .e:hover, .canvas .d:hover, .canvas .c:hover, .canvas .b:hover, .canvas .a:hover{
+  background: linear-gradient(90deg, rgba(0,255,231,1) 0%, rgba(120,9,121,1) 100%, rgba(255,0,0,1) 100%);
+opacity: 1;
+  
+}
+
+/* Все що відбувається при наведенні на блок з класом "g" */
+.canvas .g:hover + .h{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+}
+
+/* Все що відбувається при наведенні на блок з класом "f" */
+.canvas  .f:hover + .g, .canvas .f:hover + .g + .h{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+}
+
+/* Все що відбувається при наведенні на блок з класом "e" */
+.canvas .e:hover + .f, .canvas .e:hover + .f + .g,  .canvas .e:hover + .f + .g + .h{ 
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+}
+
+/* Все що відбувається при наведенні на блок з класом "d" */
+.canvas .d:hover + .e,.canvas .d:hover + .e + .f, .canvas .d:hover + .e + .f + .g,.canvas .d:hover + .e + .f + .g + .h{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+} 
+
+/* Все що відбувається при наведенні на блок з класом "c" */
+.canvas .c:hover + .d, .canvas .c:hover + .d + .e, .canvas .c:hover + .d + .e + .f, .canvas .c:hover + .d + .e + .f + .g, .canvas .c:hover + .d + .e + .f + .g + .h{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+}
+
+/* Все що відбувається при наведенні на блок з класом "b" */
+.canvas .b:hover + .c, .canvas .b:hover + .c + .d, .canvas .b:hover + .c+ .d + .e, .canvas .b:hover + .c + .d + .e + .f, .canvas .b:hover + .c + .d + .e + .f + .g, .canvas .b:hover + .c + .d + .e + .f + .g + .h{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+}
+
+/* Все що відбувається при наведенні на блок з класом "a" */
+.canvas .a:hover + .b,  .canvas .a:hover + .b + .c, .canvas .a:hover + .b + .c + .d, .canvas .a:hover + .b + .c + .d + .e, .canvas .a:hover + .b + .c + .d + .e + .f, .canvas .a:hover + .b + .c + .d + .e + .f + .g, .canvas .a:hover + .b + .c + .d + .e + .f + .g + .h{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+opacity: 1;
+}
+
+
+/* //////////////////////////////////////// CANVAS2 BLOCK /////////////////////////////////////////////// */
+.canvas2{
+  font-size: 0;
+  background: linear-gradient(90deg, rgb(97, 75, 102) 0%, rgb(231, 28, 130) 67%, rgb(0, 204, 255) 100%);
+}
+.canvas2 .block {
+  font-size: 29px;
+  background: linear-gradient(90deg, rgba(205,0,255,1) 0%, rgba(43,121,9,1) 67%, rgba(241,255,0,1) 100%);
+}
+.canvas2 .block{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.canvas2 .a {
+  width: 200px;
+  height: 40px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.canvas2 .b {
+  height: 400px;
+  width: 20px;
+}
+.canvas2 .c {
+  width: 400px; 
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: 740px;
+  vertical-align: middle;
+}
+.canvas2 .d {
+  width: 50px;
+  height: 700px;
+  border-radius: 30%;
+}
+.canvas2 .e {
+  width: 500px;
+  height: 700px;
+  margin-left: -10px;
+  border-radius: 26% 74% 31% 69% / 0% 100% 0% 100% 
+}
+.canvas2 .f {
+  margin-left: 1100px;
+}
+.canvas2 .g {
+  width: 800px;
+  margin-top: -1px;
+  margin-left: 500px;
+}
+.canvas2 .h{
+  margin-left: 550px;
+  width: 100px;
+  height: 590px;
+}
+
+.h:hover, .g:hover, .f:hover, .e:hover, .d:hover, .c:hover, .b:hover, .a:hover{
+  background: linear-gradient(90deg, rgba(0,255,231,1) 0%, rgba(120,9,121,1) 100%, rgba(255,0,0,1) 100%);
+  opacity: 1;
+  visibility: visible; 
+}
+
+/* При натисненні блоки сають більшими. Умовне полегшення рівня */
+.a:active{
+  height: 70px;
+}
+.b:active{
+  width: 40px;
+}
+.c:active{
+  height: 300px;
+  width: 500px;
+}
+.d:active{
+  width: 80px;
+}
+.e:active{
+  width: 600px;
+  height: 800px;
+}
+.f:active{
+  width: 300px;
+  height: 300px;
+}
+.g:active{
+  height: 300px;
+}
+.h:active{
+width: 200px;
+}
+.g:hover + .h, .f:hover + .g, .e:hover + .f, .d:hover + .e, .c:hover + .d, .b:hover + .c, .a:hover + .b{
+  background: linear-gradient(90deg, rgba(171,0,255,1) 0%, rgba(233,45,45,1) 45%, rgba(9,36,121,1) 100%);
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* //////////////////////////////////////// ABOUT BLOCK /////////////////////////////////////////////// */
+.about {
+  font-family: Exo, sans-serif;
+  color: #ffffff;
+  background: #313131 url("../img/portfolio/bgpng.png") 0 0 / cover no-repeat;
+}
+.about-container {
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 180px 0;
+}
+.about .sub-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 116.666667%; /* 70/60 */
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.about .sub-title::after{
+  display: block;
+  margin: 20px auto 0;
+  content: "";
+  height: 1px;
+  width: 400px;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);;
+}
+.about .text {
+  font-size: 18px;
+  line-height: 272.222222%; /* 49/18 */
+  letter-spacing: -1px;
+  margin-bottom: 60px;
+}
+.about .list {
+  font-family: Orbitron, sans-serif;
+}
+.about .item {
+  display: inline-block;
+}
+.about .item:not(:last-child){
+  
+  margin-right: 60px;
+}
+.about .item::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 60px;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(66,255,0,1) 50%, rgba(36,0,255,1) 100%);;;
+}
+.about .item a:hover{
+  text-decoration: underline;
+}
+.about .item a:active{
+  color: aquamarine;
+}
+
+
+/* //////////////////////////////////////// CONTACTS BLOCK /////////////////////////////////////////////// */
+
+.contacts {
+  font-family: "Exo",sans-serif;
+  background-color: #2b2929;
+  padding: 20px;
+  text-align: center;
+}
+.contacts .list {
+  color: #fff;
+  font-size: 20px;
+}
+.contacts .item {
+  display: inline-block;
+  letter-spacing: -1px;
+}
+.contacts .item a{
+  min-height: 25px;
+}
+.contacts .item a:hover{
+  text-decoration: underline;
+}
+.contacts .item a:active{
+  color: aquamarine;
+}
+.contacts .item:not(:last-child){
+  margin-right: 80px;
+}
+.contacts .item a::before{
+  vertical-align: middle;
+  content: "";
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+.contacts .item.tel a::before{
+  background: transparent url("../img/portfolio/tel.png") 0 0 no-repeat;
+}
+.contacts .item.map a::before{
+  background: transparent url("../img/portfolio/map.png") 0 0 no-repeat;
+}
+.contacts .item.mail a::before{
+  background: transparent url("../img/portfolio/mail.png") 0 0 no-repeat;
+}
