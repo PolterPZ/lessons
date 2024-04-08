@@ -339,7 +339,6 @@ width: 200px;
   display: inline-block;
 }
 .about .item:not(:last-child){
-  
   margin-right: 60px;
 }
 .about .item::after{
@@ -355,6 +354,9 @@ width: 200px;
 }
 .about .item a:active{
   color: aquamarine;
+}
+.about .item a:visited{
+  color: #c089ec;
 }
 
 
@@ -383,6 +385,9 @@ width: 200px;
 .contacts .item a:active{
   color: aquamarine;
 }
+.contacts .item a:visited{
+  color: #c089ec;
+}
 .contacts .item:not(:last-child){
   margin-right: 80px;
 }
@@ -402,3 +407,80 @@ width: 200px;
 .contacts .item.mail a::before{
   background: transparent url("../img/portfolio/mail.png") 0 0 no-repeat;
 }
+
+
+/* //////////////////////////////////////// PRACTICE BLOCK /////////////////////////////////////////////// */
+
+
+.practice {
+  background-color: #ffffff;
+}
+.practice-block-1 {
+  background-color: #583737;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.practice-block-1 .practice-item {
+  background-color: #438b7a;
+  width: 100%;
+  height: 100px;
+}
+.practice-block-1 .practice-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.practice-block-1 .practice-item:first-child{
+  background-color: #d592b7;
+}
+.practice-block-1 .practice-item:last-child{
+  background-color: #c089ec;
+}
+.practice-block-1 section.practice-item:first-of-type { /* тут first-child неспрацює оскліьки section не є першими для батьківського блоку */
+  background-color: #fff;
+}
+.practice-block-1 section.practice-item:nth-child(6){ /*хоч на сторінці тіки 2 елелмента де в section є клас practice-item але nth-child бере свій розрахунок з батьківського класу, тому для батьківсьукого елементу section.practice-item знаходиться на 6 позиції. Ну й логчно що цей селектор не працюватиме яущо в html буде блок із цим кдасом але не тегом section. Щоб реаліхувати ідею використовуєм nth-of-type*/
+  background-color: red;
+
+}
+.practice-block-1 .practice-item:nth-child(2){
+  text-align: center; 
+  font-size: 30px;
+}
+
+.practice-block-1 .practice-item:nth-child(2):target{
+  border: 12px solid #cd938e;
+}
+
+.practice-block-2 {
+  background-color: #583737;
+  padding: 20px;
+}
+.practice-block-2 .practice-item {
+  background-color: #438b7a;
+  width: 100%;
+  height: 100px;
+}
+.practice-block-2 .practice-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.practice-block-2 .practice-item:nth-child(2n+3){
+  background-color: #5cbf71;
+}
+.practice-block-2:has(section){
+  background-color: #412c2c;
+}
+.practice-block-2:has(section) section.practice-item:nth-of-type(2){
+  background-color: #fff;
+}
+.practice-block-2 .practice-item:nth-child(1)::before, .practice-block-2 .practice-item:nth-child(2)::after{
+  content: "";
+  background-color: #e882df;
+  width: 50px;
+  height: 50px;
+}
+/* .practice-block-2 .practice-item:nth-child(1)::before::before, .practice-block-2 .practice-item:nth-child(2)::after::after{
+  content: "";
+  background-color: #ffffff;
+  width: 20px;
+  height: 20px;
+} так не можна =( */
