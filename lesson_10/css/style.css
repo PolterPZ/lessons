@@ -1,0 +1,281 @@
+
+
+/* //////////////////////////////////////// ОБНУЛЕННЯ /////////////////////////////////////////////// */
+@import url("reset.css");
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0000004c;
+}
+
+.header__top{
+ min-height: 80px;
+ padding: 20px;
+ background-color: #fff;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 50;
+}
+
+.header__container:target{
+    display: inline-block;/*потрібно для динамічного контенту в разі збільшення назви .menu-link*/
+}
+
+.header__logo {
+    max-width: 400px;
+    margin-right: 25px;
+}
+.header__logo img{
+    max-width: 100%;
+}
+
+.header__button{
+    background-color: #FFBC57;
+    color: #fff;
+    font-size: 19px;
+    line-height: 126.315789%; /* 24/19 */
+    padding: 11px 20px 11px 54px;
+    position: relative;
+    border-radius: 5%;
+    vertical-align: top;
+}
+.header__button:hover{
+    background-color: #ffca76; 
+    text-decoration: underline;
+}
+.header__button::before{
+    content: "";
+    background: url("../img/header/catalog.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 25%;
+    left: 20px;
+}
+
+.header__container{
+    
+    display: none; 
+    position: absolute;
+    top: 100px;
+    left: 0;
+   
+}
+.header__menu {
+    
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    background-color: #fff;
+    position: relative;
+    min-width: 300px;
+    /* overflow: hidden; */
+}
+
+.menu__item:has(> .sub-list)::after{
+    display: none;
+    content: "";
+    position: absolute;
+    top: 2.5%;
+   
+    right: 0;
+    height: 95%; /*Ми берем висоту батьківського елемента .menu__item. Він абсолютний тому у відсотках беереться висота батьківського а не його ширина*/
+    width: 5px;
+    background-color: #FFBC57;
+    z-index: 1;
+}
+.menu__item:hover::after{
+    display: block; 
+}
+.menu__item:hover .menu__sub-list{
+    display: block;
+     height: 100%;  /* Берем висоту батьківського елементу .menu__item щоб блок підпунктів був такої ж висоти як й основне меню */
+    overflow: auto; /* кщо сильно багато контенту то хай буде скрол і в разі чого список не був пря дуже дуже довгим вниз */
+}
+
+.menu__item:hover .menu__link{
+    background-color: #FFBC57;
+}
+.menu__item:first-child .menu__link{
+    border-radius: 10px 0 0 0;
+}
+.menu__item:last-child .menu__link{
+    border-radius: 0 0 0 10px; 
+}
+/*  зробив радіуси саме для ітемів списку, бо якщо задавати радіус батькіському елементу то при ховері буде вибивати оранжевий за межі кутів, але якщо задати overflow: hiden то тоді неможливо буде побаичти підпункти при ховері */
+.menu__item:hover .menu__link::before{
+    background: url("../img/header/arrow-right-hover.svg") no-repeat;
+}
+
+.menu__link::before{
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    background: url("../img/header/arrow-right.svg") no-repeat;
+    top: 50%;
+    margin-top: -7px;/* Вирівеювання по висоті піднявши на половину висоти об'єкту*/
+    right: 20px;
+    
+}
+.menu__item .menu__link::after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;  /* Вирівеювання по висоті піднявши на половину висоти об'єкту*/
+    margin-left: 30px;
+}
+.menu__item:nth-child(1) .menu__link::after{
+    background: url("../img/header/bad.svg") center no-repeat;
+}
+.menu__item:nth-child(2) .menu__link::after{
+    background: url("../img/header/matrace.svg") center no-repeat;
+}
+.menu__item:nth-child(3) .menu__link::after{
+    background: url("../img/header/sofa.svg") center no-repeat;
+}
+.menu__item:nth-child(4) .menu__link::after{
+    background: url("../img/header/shelf.svg") center no-repeat;
+}
+.menu__item:nth-child(5) .menu__link::after{
+    background: url("../img/header/comode.svg") center no-repeat;
+}
+.menu__item:nth-child(6) .menu__link::after{
+    background: url("../img/header/shell-box.svg") center no-repeat;
+}
+.menu__item:nth-child(7) .menu__link::after{
+    background: url("../img/header/table.svg") center no-repeat;
+}
+.menu__item:nth-child(8) .menu__link::after{
+    background: url("../img/header/chair.svg") center no-repeat;
+}
+.menu__item:nth-child(9) .menu__link::after{
+    background: url("../img/header/wall.svg") center no-repeat;
+}
+.menu__item:nth-child(10) .menu__link::after{
+    background: url("../img/header/kitchen.svg") center no-repeat;
+}
+.menu__link {
+    position: relative;
+    background-color: #fff;
+    padding: 16px 54px 16px 85px;
+    line-height: 210.526316%; /* 40/19 */
+    width: 100%; /* Щоб прижати стрілки до правого краю. Тому при збільшені чи зменшенні тексту вони залишяться зкраю*/
+     min-height: 40px;  /* Захіж безпеки для вразі зменешння розміру тексту, щоб іконка не вирізалася*/
+     position: relative;
+     z-index: 50;
+}
+
+.menu__sub-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+    color: #2b2929;
+    font-size: 19px; 
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 0px 10px 10px 0;
+    z-index: 50;
+}
+
+
+.sub-list__link {
+    line-height: 210.526316%; /* 40/19 */
+    background-color: #fff;
+    min-width: 300px;  /* Щоб дуже вузькі підпункти не були*/
+    padding: 13px 30px;
+    position: relative;
+    z-index: 50;
+}
+.sub-list__item:hover .sub-list__link{
+    background-color: #FFBC57;
+
+}
+
+
+
+.page {
+}
+.categories {
+}
+.page__categories {
+    padding-top: 100px;
+}
+
+.categories__container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+.categories__items {
+    margin: 0px -10px;
+    font-size: 0;
+}
+.categories__item {
+    padding: 0px 5px;   
+    margin-bottom: 15px;
+}
+.item-categories {
+    /* display: block; */
+    max-width: 260px;
+      
+    position: relative; 
+}
+
+.item-categories__content{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;/* щоб текст ховався*/
+    overflow: hidden;
+}
+.item-categories__content:hover{
+    box-shadow: 0 0 10px #2b2929;
+}
+.item-categories__content::before{
+    content: "";
+    bottom: 20px;
+    right: 20px;
+    position: absolute;
+    background: url("../img/page/categories/arrow-link.svg") no-repeat;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+.item-categories__top {
+    font-size: 20px;
+    line-height: 140%; /* 28/20 */
+    letter-spacing: 0;
+   
+}
+.item-categories__name {
+   display: inline-block;
+}
+.item-categories__quantity {
+    color: #B1B1B1;
+    text-align: right;
+    display: inline-block;
+    margin-left: 120px;
+}
+.item-categories__image {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.item-categories__image::before{
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: -20%;
+    z-index: -1;
+    width: 350px;
+    height: 400px;
+    border-radius: 50%;
+    background-color: #ebe8e8;
+}
+.item-categories__image img{
+    max-width: 100%;
+}
