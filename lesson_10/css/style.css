@@ -17,6 +17,10 @@ body{
  width: 100%;
  z-index: 50;
 }
+.wrapper {
+	min-height: 100%;
+	overflow: clip;
+}
 
 .header__container:target{
     display: inline-block;/*потрібно для динамічного контенту в разі збільшення назви .menu-link*/
