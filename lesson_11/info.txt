@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<meta property="og:locale" content="uk_UA">
+  <meta property="og:site_name" content="Natural Store">
+  <meta property="og:title" content="Магазин">
+
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Agro Fiber- теплиця">
+  <meta property="og:image" content="https://ax1miti.com/wp-content/uploads/2024/03/ава-парник.png">
+  <meta property="og:image:url" content="https://ax1miti.com/wp-content/uploads/2024/03/ава-парник.png">
+  <meta property="og:image:secure_url" content="https://ax1miti.com/wp-content/uploads/2024/03/ава-парник.png">   
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=480">
+  <meta charset="UTF-8">
+  <meta name="description" content="Интeрнeт-мaгaзин,быстрaя дoстaвкa,кaчeствeнный тoвaр,дoвoльныe клиeнты,нa рынкe прoдaж 10 лeт">
+            
+            <script src="js/jquery-2.2.2.min.js"></script>
+
+  <title>Agro Fiber- теплиця &#8211; Ax1miti</title>
+
+
+<link rel='stylesheet' id='wp-block-library-css' href='css/style.css' >
+<style id='classic-theme-styles-inline-css'>
+/**
+ * These rules are needed for backwards compatibility.
+ * They should match the button element rules in the base theme.json file.
+ */
+.wp-block-button__link {
+	color: #ffffff;
+	background-color: #32373c;
+	border-radius: 9999px; /* 100% causes an oval, but any explicit but really high value retains the pill shape. */
+
+	/* This needs a low specificity so it won't override the rules from the button element if defined in theme.json. */
+	box-shadow: none;
+	text-decoration: none;
+
+	/* The extra 2px are added to size solids the same as the outline versions.*/
+	padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+	font-size: 1.125em;
+}
+
+.wp-block-file__button {
+	background: #32373c;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='style-css' href='css/style.css' >
+<link rel='stylesheet' id='timer-css' href='css/timer.css' >
+<link rel='stylesheet' id='slick-css' href='css/slick.css' >
+<link rel='stylesheet' id='settings-css' href='css/settings.css' >
+<link rel='stylesheet' id='normalize-css' href='css/normalize.css' >
+<link rel='stylesheet' id='style-frontpage-css' href='css/style-frontpage.css' >
+
+<body>
+    
+
+<div class="product-page">
+    <!-- after_qbici -->
+    <style>
+            .sale{
+        margin-top: 50%;
+        margin-left: 0%;
+    }
+    </style>
+    <div style="display:none">Array
+(
+    [utms] => Array
+        (
+            [utm_source] => 
+            [utm_medium] => 
+            [utm_term] => 
+            [utm_content] => 
+            [utm_campaign] => 
+        )
+
+)
+</div>
+  <div class="wrap">
+        <section class="b1" style="background-image: url('uploads/2024/03/ава-парник.png')">
+            <div class="block1-pod"></div>
+                       
+            <div class="sale" style="background-color: #ffffff">Aкцiя! <p>-35%</p> знижка</div>
+
+
+
+        </section>
+        <div class="price clearfix">
+                        <div class="old-cost"><span>968грн</span></div>
+            <div class="new-cost">629грн</div>
+        </div>
+        <div style="font-size: 13px; margin-bottom: 20px; text-align: center;">*- Цiну знижено через випуск нової моделi. Додаткову iнформацiю Вам надасть наш менеджер. Ваша розмова може бути записана з метою покращення якостi обслуговування.</div>
+        <div class="proposition" style="font-size: 13px">*- Акція триває з 20.03.2024  по 24.03.2024</div>
+        <a href="index.htm#" class="button-m" style="top:-30px;">зробити замовлення</a>
+        <p class="stock" style="top:-20px;color:#000;">Залишилось <span>17</span> одиниць</p>
+        <!-- michael-k90 -->
+                
+
+        <section class="b2">
+                        <h2 class="title">Парники прискорюють  <span>зростання розсади у 2-3 рази</span></h2>
+            <p>
+            <picture>
+
+                <img src="uploads/2024/03/3881297445_w640_h640_3881297445.webp">
+            </picture>
+            </p>
+            <p style="text-align: center;">З Agro Fiber можна буде посіяти насіння на розсаду, накрити і не турбувати парник так часто, завдяки багатьом властивостям агроволокна, а саме: повітрообмін, вологообмін, захист від шкідників і захист від заморозків (до -7). Завдяки таким властивостям, розсада дуже добре загартовується і може знаходиться самостійно. Це дуже зручно якщо ви дачник і можете приїжджати тільки один раз в тиждень. Парник-теплиця дуже добре підходить для вирощування здорової і міцної розсади.</p>
+<pre><video class="product" src="uploads/2024/02/%D0%B2%D1%96%D0%B4%D0%B5%D0%BE-%D1%82%D0%B5%D0%BF%D0%BB%D0%B8%D1%86%D1%8F.mp4" autoplay="autoplay" loop="loop" muted="" width="480" height="480"></video></pre>
+<p style="text-align: left;">✅Скорочується кількість води необхідною для поливання;<br>
+✅Витримує мороз до 7 °C;<br>
+✅Встановлюється за 7 хвилин;<br>
+✅Не боїться вітру;<br>
+✅Створює правильний мікроклімат;<br>
+✅Зменшення кількості бур’янів;<br>
+✅Запобігання появи шкідників;<br>
+✅Завдяки якісному матеріалу слугуватиме довго.<img fetchpriority="high" decoding="async" class="alignnone size-full wp-image-10763" src="uploads/2024/02/4235146699_w640_h640_4235146699.webp" alt="" width="636" height="525"></p>
+
+        </section>
+
+        <!-- bizlife_inc -->
+        <section class="b3" style="margin-top: -10px;">
+                    <h2 class="title">Агроволокно слугує понад 5 років<span></span></h2>
+            <p>
+
+                <img src="uploads/2024/03/a62c3ec4-a56b-4ede-9949-0b26b3c83939.jpg">
+            </p>
+            <div style="text-align: center;">Довжина парника:6/8/10 метрів</div>
+<div style="text-align: center;">Ширина:120 см</div>
+<div style="text-align: center;">Висота:80 см</div>
+<div style="text-align: center;"><strong>Надійні кліпси:</strong></div>
+<div style="text-align: center;">Кліпси надійно фіксують агроволокно на дугах, спрощують полив і прополку рослин.</div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;"><strong>Дуги з ПНД:</strong></div>
+<div style="text-align: center;">Такі дуги стійкі до ультрафіолету, не ламаються і не гнуться. Зроблені з якісної сировини, що гарантує їх довговічність.</div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;"><strong>Міцні кілочки:</strong></div>
+<div style="text-align: center;">Міцні товсті кілочки полегшують процес установки, роблять парник стійким.</div>
+<div style="text-align: center;"></div>
+<div style="text-align: center;"><strong>Щільне агроволокно:</strong></div>
+<div style="text-align: center;">Агроволокно щільністю 60 г / м2 європейського виробництва, яке пропускає достатню кількість вологи, повітря і світла.</div>
+<div>
+<p style="text-align: center;"><strong>Комплектація:</strong></p>
+<p style="text-align: center;">полотно для парника 8 метрів – 1 шт.;</p>
+<p style="text-align: center;">дуги – 9 шт.;</p>
+<p style="text-align: center;">кілочки для установки – 18 шт.;</p>
+<p style="text-align: center;">кліпси для фіксації полотна – 18 шт;</p>
+<p style="text-align: center;">упаковка.</p>
+</div>
+            <!-- <ul class="plus">
+                            </ul> -->
+            <a href="#buy" class="button-m" style="margin-top: 30px;">зробити замовлення</a>
+        </section>
+        <!-- owmen17 -->
+        <style>
+            /* benefits 2 */
+                .b2>ul{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+                
+            .benefits_list2 {
+                margin: 0 10px;
+                font-size: 0;
+                line-height: 0;
+                letter-spacing: -1px;
+                text-align: center;
+            }
+
+            .benefits_list2 .benefit_item {
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 10px 30px;
+                width: 50%;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: normal;
+            }
+
+            .benefits_list2 .benefit_item img {
+                display: block;
+                margin: 0 auto 15px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+
+            .benefits_list2 .benefit_item h4 {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 24px;
+            }
+            .m1-form select.input {
+                position: relative;
+                display: block;
+                outline: 0;
+                border: none;
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                width: 100%;
+                height: 84px;
+                line-height: 84px;
+                margin: 0 auto 20px;
+                padding: 0 20px;
+                background: #fff;
+                text-align: center;
+                font-size: 18px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                color: #222;
+                -webkit-transition: all .2s;
+                -moz-transition: all .2s;
+                -o-transition: all .2s;
+                -ms-transition: all .2s;
+                transition: all .2s;
+            }
+        </style>
+        <!-- after_qbici -->
+        <section class="b5">
+            <h2 class="title">як зробити <span style="color: #fdd800">замовлення?</span></h2>
+            <ul class="ship">
+                <li><span></span>
+                    <p>Залишаєте заявку на сайтi</p>
+                </li>
+                <li><span></span>
+                    <p>Нaш мeнeджeр утoчнює деталi замовлення</p>
+                </li>
+                <li><span></span>
+                    <p>Службa дoстaвки дoстaвляє Ваш товар</p>
+                </li>
+                <li><span></span>
+                    <p>Оплачуєте при отриманнi</p>
+                </li>
+            </ul>
+        </section>
+        <!-- endzeit_____ -->
+        <section class="b6">
+            <h2 class="title">вiдгуки <span>пoкупцiв</span></h2>
+            <div class="reviews">
+                                <div>
+                    <img src="uploads/2024/03/20e0488a-b269-49d8-96d9-a52db1195c82.jpg">
+                              <h3>Петро Калатаєв</h3>
+                    <p class="center">Купив парник міні теплицю цього року і дуже задоволений результатом. Розмір ідеальний для моєї дачі, а врожайність дивовижна!</p>
+                </div>
+                                    <div>
+                    <img src="uploads/2024/03/3642898522_w640_h640_3642898522-e1709229525704.webp">
+                              <h3>Олена Городіль</h3>
+                    <p class="center">Моя міні теплиця - це мій секрет успіху в садівництві. Легко установити і доглядати, а результат просто вражає! Один з кращих покупок для городу.</p>
+                </div>
+                                    <div>
+                    <img src="uploads/2024/03/2984690173_w640_h640_2984690173.webp">
+                              <h3>Алла Руденко</h3>
+                    <p class="center">Міні теплиця - просто диво! За її допомогою вдалося виростити смачний перчик навіть у холодну пору року. Рекомендую!</p>
+                </div>
+                                </div>
+        </section>
+        <!-- michael-k90 -->
+        <section class="b7">
+            <h2>зaмовляйте прямo зараз</h2>
+        </section>
+        <!-- bizlife_inc -->
+        <section class="b1 end" style="background-image: url('uploads/2024/03/ава-парник.png')">
+            <div class="block1-pod"></div>
+           
+            
+                        <div class="sale" style="background-color: #ffffff">Aкцiя! <p>-35%</p> знижка</div>
+  
+        </section>
+        <!-- endzeit_____ -->
+        <section class="b8">
+
+            <div class="price clearfix" style="top:0px">
+                            <div class="old-cost"><span>968грн</span></div>
+                <div class="new-cost">629грн</div>
+            </div>
+            <div style="font-size: 13px; margin: 20px 0; text-align: center; color: white;">*- Цiну знижено через випуск нової моделi. Додаткову iнформацiю Вам надасть наш менеджер. Ваша розмова може бути записана з метою покращення якостi обслуговування.</div>
+            <div class="proposition" style="font-size: 13px; color: white; margin-bottom: 20px">*- Акція триває з 20.03.2024  по 24.03.2024</div>
+
+            
+                        <form id="buy" class="m1-form" action="" method="post" onsubmit="fbq('track', 'Lead'); return true;">
+                <div>
+                    <select name="sale" class="input" data-js="select-sale">
+                        <option selected="" value="81">▼ Обрати тип:</option>
+                                                    <option value="81" data-id="1">Agro Fiber 6 м - 629 грн.</option>
+                                                    <option value="82" data-id="1">Agro Fiber 8 м - 699 грн.</option>
+                                                    <option value="83" data-id="1">Agro Fiber 10 м - 899 грн.</option>
+                                            </select></div>
+                <input class="field" name="name" type="text" placeholder="Ввeдіть Ваше ім'я" required="">
+                <input class="field" name="phone" type="tel" pattern="((\+38)?\(?\d{3}\)?[\s\.-]?(\d{7}|\d{3}[\s\.-]\d{2}[\s\.-]\d{2}|\d{3}-\d{4}))" placeholder="Ввeдіть Вaш тeлeфoн" required="">
+                <input class="field" name="email" type="text" placeholder="Ввeдіть Вaш email(необов'язково)">
+                <button class="button-m button-submit" onclick="return gtag_report_conversion('https://ax1miti.com/dop');">зробити замовлення</button>
+            </form>
+            
+                                <br>
+            <p class="stock">Залишилось<span>17</span> одиниць</p>
+        </section>
+
+<footer class="footer">
+    <div class="images">
+        <img src="uploads/2022/10/paymethod.jpg" alt="Оплата при отриманні!" class="payment">
+        <img src="uploads/2021/11/Banner3.jpg" alt="Доставка Новою Поштою!" class="delivery">
+        <img src="uploads/2021/11/Banner-4.jpg" alt="Доставка Укрпоштою!" class="delivery">
+    </div>
+            <p><a class="politics" href="/site">МАГАЗИН НАШИХ ТОВАРIВ</a></p>
+<p>Інтернет-магазин &#8220;Media GoAds&#8221;</p>
+<p>4000, Суми, Зарічний район</p>
+<p>Телефон гарячої лінії: +380999134595</p>
+<p>Електронна адреса для зв’язку: mail@ax1miti.com.com</p>
+<p><a class="politics" href="/politics" target="_blank" rel="noopener">Політика конфіденційності</a></p>
+<p><a class="politics" href="/cookies" target="_blank" rel="noopener">Файли cookie</a></p>
+<p><a class="politics" href="/oferta" target="_blank" rel="noopener">Публічна оферта</a></p>
+<p><a class="politics" href="/oplata" target="_blank" rel="noopener">Оплата та доставка</a></p>
+</footer>
+</div>
+    <div class="modal hide">
+        <div class="modal-block">
+            <h3>Почекайте, ваше замовлення обробляється</h3>
+            <img src="themes/aleestore/img/loading.gif" alt="">
+        </div>
+    </div>
+    <script>
+        let formField = document.querySelectorAll('.field');
+            console.log(formField);
+            window.addEventListener("pageshow", ()=>
+            {
+                formField.forEach(formField => {
+                formField.value = '';
+                })
+            });
+    </script>
+    <script>
+        document.querySelector('#buy').addEventListener('submit', () => {
+            document.querySelector('.modal').classList.remove('hide')
+            document.querySelector('html').classList.add('noscroll')
+        })
+    </script>
+    <script id="ss-gadget" src="js/client/gd.min.js?v2.0.0" data-target="yOAP6jLw" data-domain="mediagoads"></script>
+    <style id='core-block-supports-inline-css'>
+/**
+ * Core styles: block-supports
+ */
+
+</style>
+<script src="js/navigation.js?ver=1.0.0" id="aleestore-navigation-js"></script>
+<script src="js/count.js?ver=1.0.0" id="count-js"></script>
+<script src="/js/main.js?ver=1.0.0" id="main-js"></script>
+<script src="/js/maskedinput.js?ver=1.0.0" id="maskedinput-js"></script>
+<script src="/js/previewYouTube.js?ver=1.0.0" id="previewYouTube-js"></script>
+<script src="/js/slick.min.js?ver=1.0.0" id="slick-js"></script>
+</div>
+</body>
+
+</html>
+
+<!-- Page cached by LiteSpeed Cache 6.1 on 2024-03-23 14:35:10 -->

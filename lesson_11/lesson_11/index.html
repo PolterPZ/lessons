@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Lesson 11</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        <!-- Column-1  -->
+        <div class="column">
+          <div class="header__object empty">
+            empty
+          </div>
+          <div class="header__object position">
+            position: relative;
+          </div>
+
+          <div class="header__object index">
+            position: relative;
+            z-index: 3;
+          </div>
+
+          <div class="header__object transform">
+            <div class="transform__btn transform__btn--1">Press me!</div>
+            <div class="transform__btn transform__btn--2">Press me!</div>
+            <div class="transform__child">transform</div>
+
+
+          </div>
+          <div class="header__conclusion">
+            <p>
+              Блок Трансформ будучи на рівень вкладеності нижчим, все-одно перекриває блоки 1 та 2. <br>
+              Але блок із заданим z-index вже не виходить
+            </p>
+          </div>
+        </div>
+        <!-- Column-2  -->
+        <div class="column">
+          <div class="header__object empty">
+            position: absolute;
+          </div>
+          <div class="header__object position">
+            position: relative;
+            z-index: 1;
+          </div>
+
+          <div class="header__object index">
+            position: relative;
+            z-index: 0;
+          </div>
+
+          <div class="header__object transform">
+            <div class="transform__btn transform__btn--1">Press me!</div>
+            <div class="transform__btn transform__btn--2">Press me!</div>
+            <div class="transform__child">transform</div>
+
+
+          </div>
+          <div class="header__conclusion">
+            <p>
+              Блок трансформ перекривається блоками якщо там встановлений z-index => 1. кщо вказати позиціювання без
+              нього то тоді буде враховуватися позиція в коді
+            </p>
+          </div>
+        </div>
+        <!-- Column-3  -->
+        <div class="column">
+          <div class="header__object empty">
+            empty
+          </div>
+          <div class="header__object position">
+            position: relative;
+            z-index: 3;
+          </div>
+
+          <div class="header__object transform">
+            <div class="transform__btn transform__btn--1">Press me!</div>
+            <div class="transform__btn transform__btn--2">Press me!</div>
+            <div class="transform__child">position: relative;
+
+              width: 220px;
+            </div>
+
+
+          </div>
+          <div>
+            <div>
+              <div>
+                <div class="header__object index">
+                  transform: scale(1.2);
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header__conclusion">
+            <p>
+              Якщо маєм різні трансформи то без зазначення індексу буде враховуватися положення в коді.
+              transform знаходиться на декілька рівнем нище і по якійсь логіці його мало перекривати, але від цього не
+              залежить на якому він слої. Але залежить від позиції в коді
+            </p>
+          </div>
+        </div>
+        <!-- Column-4  -->
+        <div class="column">
+          <div class="header__object empty">
+            empty
+          </div>
+          <div class="header__object position">
+            transform: scale(1.2);
+          </div>
+
+          <div class="header__object index">
+            position: relative;
+            z-index: 3;
+          </div>
+
+          <div class="header__object transform">
+            <div class="transform__btn transform__btn--1">Press me!</div>
+            <div class="transform__btn transform__btn--2">Press me!</div>
+            <div class="transform__child">transform</div>
+
+
+          </div>
+          <div class="header__conclusion">
+            <p>
+              Блок трансформ перекривається блоками якщо там встановлений z-index => 1
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </header>
+    <!-- гра карусель. рухаю по лінії -> обертається об'єкт -->
+    <main class="page">
+      <div class="page__carousel carousel">
+        <div class="carousel__container">
+
+          <div class="carousel__button"></div>
+          <div class="carousel__button"></div>
+          <div class="carousel__button"></div>
+          <div class="carousel__button"></div>
+
+          <div class="carousel__animation">
+            <div class="carousel__item"><img class="carousel__image" src="img/arrow-right.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page__slider slider">
+        <div class="slider__title">Slider</div>
+        <div class="slider__container">
+
+          <a id="id-1" href="#id-1" class="slider__button">1</a>
+          <a id="id-2" href="#id-2" class="slider__button">2</a>
+          <a id="id-3" href="#id-3" class="slider__button">3</a>
+          <a id="id-4" href="#id-4" class="slider__button">4</a>
+
+          <div class="slider__animation">
+            <div class="slider__items">
+              <div class="slider__item">1</div>
+              <div class="slider__item">2</div>
+              <div class="slider__item">3</div>
+              <div class="slider__item">4</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="page__presentation presentation">
+        <div class="presentation__container">
+          <div class="transform-2d">
+            <div class="transform-2d__container">
+
+
+              <div class="transform-2d__block transform-2d__block--translate">
+                translate
+              </div>
+              <div class="transform-2d__block transform-2d__block--scale">
+                scale
+              </div>
+              <div class="transform-2d__block transform-2d__block--rotate">
+                rotate
+              </div>
+              <div class="transform-2d__block transform-2d__block--rotate-x">
+                rotate-x
+              </div>
+              <div class="transform-2d__block transform-2d__block--rotate-y">
+                rotate-y
+              </div>
+              <div class="transform-2d__block transform-2d__block--skew">
+                skew
+              </div>
+              <div class="transform-2d__block transform-2d__block--skew-x">
+                skew-x
+              </div>
+              <div class="transform-2d__block transform-2d__block--skew-y">
+                skew-y
+              </div>
+              <div class="transform-2d__mix">
+                <div class="transform-2d__block transform-2d__block--mix">
+                  mix
+                </div>
+                <div class="transform-2d__block transform-2d__block--mix">
+                  mix
+                </div>
+                <div class="transform-2d__block transform-2d__block--mix">
+                  mix
+                </div>
+                <div class="transform-2d__block transform-2d__block--mix">
+                  mix
+                </div>
+                <div class="transform-2d__block transform-2d__block--mix">
+                  mix
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="transform-origin">
+            <div class="transform-origin__container">
+              <div class="transform-origin__block">top left</div>
+              <div class="transform-origin__block">bottom center</div>
+              <div class="transform-origin__block">100% 100%</div>
+              <div class="transform-origin__block">200% 200%</div>
+              <div class="transform-origin__block">200% 100%</div>
+              <div class="transform-origin__block">100% 200%</div>
+              <div class="transform-origin__block">200%</div>
+              <div class="transform-origin__block">-200%</div>
+              <div class="transform-origin__block">200% -200%</div>
+              <div class="transform-origin__block">30px -70px</div>
+              <div class="transform-origin__block">20px 20px</div>
+              <div class="transform-origin__block">-20px -20px</div>
+              <div class="transform-origin__block">20px -20px</div>
+              <div class="transform-origin__block">100% -20px</div>
+              <div class="transform-origin__block">100% center</div>
+              <div class="transform-origin__block">center 300%</div>
+            </div>
+          </div>
+          <div class="transform-3d">
+            <div class="transform-3d__container">
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+              <div class="transform-3d__cube cube">
+                <div class="face top">Top</div>
+                <div class="face bottom">Bottom</div>
+                <div class="face left">Left</div>
+                <div class="face right">Right</div>
+                <div class="face front">Front</div>
+                <div class="face back">Back</div>
+              </div>
+
+            </div>
+          </div>
+          <!-- TODO: diferent block forms and manipiulate them -->
+        </div>
+      </div>
+      <div class="page__f1 f1">
+        <div class="f1__container">
+
+          <div class="f1__body body-f1">
+            <div class="body-f1__front"></div>
+            <div class="body-f1__back"></div>
+            <div class="body-f1__left"></div>
+            <div class="body-f1__right"></div>
+            <div class="body-f1__top"></div>
+            <div class="body-f1__bottom"></div>
+          </div>
+          <div class="f1__nose"></div>
+
+          <div class="f1__front-right-wheel wheel"></div>
+          <div class="f1__front-left-wheel wheel"></div>
+          <div class="f1__back-right-wheel wheel"></div>
+          <div class="f1__back-left-wheel wheel"></div>
+
+          <div class="f1__spoiler"></div>
+        </div>
+      </div>
+      <div class="page__transform  transform">
+        <div class="transform__block"></div>
+      </div>
+      <div class="page__backface backface">
+        <div class="backface__block"></div>
+      </div>
+    </main>
+    <footer class="footer">
+
+    </footer>
+  </div>
+
+</body>
+
+</html>

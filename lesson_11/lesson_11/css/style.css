@@ -1,0 +1,1068 @@
+/* //////////////////////////////////////// ОБНУЛЕННЯ /////////////////////////////////////////////// */
+@import url("reset.css");
+
+body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0000004c;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+
+/* //////////////////////////////////////// HEADER /////////////////////////////////////////////// */
+
+.column {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.header__object {
+    width: 200px;
+    height: 150px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.empty {
+    background-color: #c6e3ae;
+}
+
+.position {
+    background-color: #8b96cf;
+}
+
+.index {
+    background-color: #cf9d8b;
+}
+
+.transform {
+    min-height: 200px;
+}
+
+.transform__child {
+    min-height: 100px;
+    background-color: #d66339;
+
+}
+
+.transform__btn {
+    width: 200px;
+    padding: 10px 20px;
+    background-color: darkgrey;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.transform__btn:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+.transform__btn--1:active~.transform__child {
+    transform: translateY(-300%);
+}
+
+.transform__btn--2:active~.transform__child {
+    transform: translateY(-450%);
+}
+
+.header__conclusion {
+    width: 400px;
+    line-height: 1.4;
+}
+
+/* //////////////////////////////////////// COLUMN 1 /////////////////////////////////////////////// */
+
+.column:first-child .position {
+
+    position: relative;
+}
+
+.column:first-child .index {
+
+    position: relative;
+    z-index: 3;
+}
+
+
+
+/* //////////////////////////////////////// COLUMN 2 /////////////////////////////////////////////// */
+.column:nth-child(2) {
+    padding-top: 150px;
+    position: relative;
+}
+
+.column:nth-child(2) .transform {
+    width: 220px;
+}
+
+.column:nth-child(2) .empty {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+}
+
+.column:nth-child(2) .position {
+
+    position: relative;
+    z-index: 1;
+}
+
+.column:nth-child(2) .index {
+
+    position: relative;
+    z-index: 0;
+}
+
+
+/* //////////////////////////////////////// COLUMN 3 /////////////////////////////////////////////// */
+.column:nth-child(3) .transform__child {
+    position: relative;
+
+    width: 220px;
+}
+
+
+.column:nth-child(3) .position {
+    position: relative;
+    z-index: 3;
+}
+
+.column:nth-child(3) .index {
+    transform: scale(1.2) translateY(-20px);
+
+}
+
+/* .column:nth-child(3) .transform__child{
+    transform: rotate(54deg);
+} */
+
+.column:nth-child(3) .transform__btn--1:active~.transform__child {
+    transform: translateY(-300%);
+
+}
+
+.column:nth-child(3) .transform__btn--2:active~.transform__child {
+    transform: translate(-50%, 50%);
+}
+
+
+/* //////////////////////////////////////// COLUMN 4 /////////////////////////////////////////////// */
+.column:nth-child(4) .transform {
+    width: 220px;
+}
+
+
+.column:nth-child(4) .position {
+
+    transform: scale(1.2);
+}
+
+.column:nth-child(4) .index {
+
+    position: relative;
+    z-index: 3;
+}
+
+/* .column:nth-child(3) .transform__child{
+    transform: rotate(54deg);
+} */
+
+.column:nth-child(4) .transform__btn--1:active~.transform__child {
+    transform: rotate(54deg) translate(-100%, -200%);
+}
+
+.column:nth-child(4) .transform__btn--2:active~.transform__child {
+    transform: rotate(54deg) translate(-200%, -200%);
+}
+
+
+.page__carousel {
+    margin-top: 40px;
+}
+
+.carousel {
+    background-color: #c6e3ae;
+    max-width: 100%;
+}
+
+.carousel__container {
+    font-size: 0;
+}
+
+.carousel__button {
+    background-color: #d66339;
+    display: inline-block;
+    border: 6px solid black;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 auto;
+    transform: translateX(-200%);
+}
+
+.carousel__button:first-child {
+    margin-left: 50%;
+}
+
+.carousel__animation {
+    background-color: #6e5432;
+    height: 300px;
+
+}
+
+.carousel__item {
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: #c6e3ae;
+}
+
+.carousel__image {
+    width: 50px;
+    margin-left: 30px;
+}
+
+.carousel__button:first-child:hover~.carousel__animation>.carousel__item {
+    transform: translate(100%, 100%) rotate(90deg);
+
+}
+
+.carousel__button:nth-child(2):hover~.carousel__animation>.carousel__item {
+    transform: translate(0, 200%) rotate(180deg);
+}
+
+.carousel__button:nth-child(3):hover~.carousel__animation>.carousel__item {
+    transform: translate(-100%, 100%) rotate(270deg);
+}
+
+.carousel__button:nth-child(4):hover~.carousel__animation>.carousel__item {
+    transform: translate(0, 0);
+}
+
+
+.page__slider {
+    margin-top: 40px;
+}
+
+.slider {
+    background-color: #c6e3ae;
+    max-width: 100%;
+}
+
+.slider__container {
+    font-size: 0;
+
+}
+
+.slider__title {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.slider__button {
+    background-color: #d66339;
+    display: inline-block;
+    border: 6px solid black;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 auto;
+    transform: translateX(-200%);
+    font-size: 18px;
+    text-align: center;
+}
+
+.slider__button:first-child {
+    margin-left: 50%;
+}
+
+.slider__animation {
+
+    height: 300px;
+
+    margin: 0 auto;
+}
+
+.slider__items {
+    display: inline-block;
+    background-color: #6e5432;
+    height: 300px;
+    min-width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 30px;
+}
+
+.slider__item {
+
+    display: inline-block;
+
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #c6e3ae;
+    color: black;
+    font-size: 20px;
+    border: 6px solid #8b96cf;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    transition: all 0.5s ease;
+    /*Я не міг не додати тут транзишн, ну бо так файно виглядає. Але не знаю як робити перехід об'єектам що стоять по черерз один*/
+    text-align: center;
+}
+
+.slider__image {
+    width: 50px;
+    margin-left: 30px;
+}
+
+
+.slider__item:nth-child(2) {
+    transform: scale(0.7) translateX(200%);
+    opacity: 0.8;
+}
+
+.slider__item:nth-child(3) {
+    transform: scale(0.6) translateX(50%);
+    opacity: 0.4;
+}
+
+.slider__item:nth-child(4) {
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.8;
+}
+
+.slider__button:nth-child(4):target~.slider__animation .slider__item:first-child {
+    transform: scale(0.7) translateX(200%);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.slider__button:nth-child(4):target~.slider__animation .slider__item:nth-child(2) {
+    transform: scale(0.6) translateX(50%);
+    opacity: 0.4;
+
+}
+
+.slider__button:nth-child(4):target~.slider__animation .slider__item:nth-child(3) {
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.8;
+
+}
+
+.slider__button:nth-child(4):target~.slider__animation .slider__item:nth-child(4) {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+    z-index: -1;
+
+}
+
+
+.slider__button:nth-child(3):target~.slider__animation .slider__item:first-child {
+    transform: scale(0.6) translateX(50%);
+    opacity: 0.4;
+}
+
+.slider__button:nth-child(3):target~.slider__animation .slider__item:nth-child(2) {
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.8;
+
+}
+
+.slider__button:nth-child(3):target~.slider__animation .slider__item:nth-child(3) {
+    transform: scale(1) translateX(0%);
+    opacity: 1;
+    z-index: -1;
+
+}
+
+.slider__button:nth-child(3):target~.slider__animation .slider__item:nth-child(4) {
+    transform: scale(0.7) translateX(200%);
+    opacity: 0.8;
+
+}
+
+
+
+
+.slider__button:nth-child(2):target~.slider__animation .slider__item:first-child {
+    transform: scale(0.8) translateX(-150%);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.slider__button:nth-child(2):target~.slider__animation .slider__item:nth-child(2) {
+    transform: scale(1) translateX(0);
+    opacity: 1;
+
+}
+
+.slider__button:nth-child(2):target~.slider__animation .slider__item:nth-child(3) {
+    transform: scale(0.7) translateX(200%);
+    opacity: 0.8;
+
+}
+
+.slider__button:nth-child(2):target~.slider__animation .slider__item:nth-child(4) {
+    transform: scale(0.6) translateX(50%);
+    opacity: 0.4;
+
+}
+
+
+
+/*
+ .slider__button:first-child:target ~ .slider__animation > .slider__item:nth-child(2){
+    transform: scale(0.5)
+    
+}
+
+.slider__button:first-child:target ~ .slider__animation > .slider__item:first-child{
+    transform: scale(0.5)
+    
+}
+.slider__button:first-child:target ~ .slider__animation > .slider__item:first-child{
+    transform: scale(0.5)
+    
+} */
+
+
+
+
+.presentation__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.transform-2d__container {
+    background-color: #e3c2c2;
+    border: 3px solid #000;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.transform-2d__block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    border: 5px solid #8b96cf;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.transform-2d__block:not(:last-child) {
+    margin-right: 20px;
+}
+
+.transform-2d__block::after {
+    transition: transform 0.3s ease;
+
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    border: 5px solid #8b96cf;
+    opacity: 0.5;
+
+}
+
+.transform-2d__block--translate:hover::after {
+    transform: translate(10px, 20px);
+}
+
+.transform-2d__block--scale:hover::after {
+    transform: scale(1.4);
+}
+
+.transform-2d__block--rotate:hover::after {
+    transform: rotate(120deg);
+}
+
+.transform-2d__block--rotate-x:hover::after {
+    transform: rotateX(120deg);
+}
+
+.transform-2d__block--rotate-y:hover::after {
+    transform: rotateY(120deg);
+}
+
+.transform-2d__block--skew:hover::after {
+    transform: skew(40deg, 40deg);
+}
+
+.transform-2d__block--skew-x:hover::after {
+    transform: skewX(40deg);
+}
+
+.transform-2d__block--skew-y:hover::after {
+    transform: skewY(40deg);
+}
+
+.transform-2d__block--mix:nth-of-type(1):hover::after {
+    transform: translate(-10px, -20px) scale(1.2) skew(20deg, 10deg) rotate(45deg);
+}
+
+.transform-2d__block--mix:nth-of-type(2):hover::after {
+    transform: rotateX(30deg) skewX(30deg) translateX(20px) scaleY(3);
+}
+
+.transform-2d__block--mix:nth-of-type(3):hover::after {
+    transform: rotateY(180deg) skewX(40deg);
+    /*лютий ефект еластики під час обертання*/
+}
+
+.transform-2d__block--mix:nth-of-type(4):hover::after {
+    transform: rotate(40deg) skew(30deg, 30deg);
+    /*лютий ефект еластики під час обертання*/
+}
+
+.transform-2d__block--mix:nth-of-type(5):hover::after {
+    transform: scaleY(1.5)
+        /*лютий ефект еластики під час обертання*/
+}
+
+
+
+.transform-origin__container {
+    background-color: #d66339;
+    padding: 20px;
+    border: 3px solid #000;
+    margin-bottom: 40px;
+
+}
+
+.transform-origin__block {
+    vertical-align: top;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: #6ad7ff;
+    border: 5px solid #ff8bd2;
+    transition: transform 0.6s ease;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.transform-origin__block::after {
+    transition: transform 0.3s ease;
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100px;
+    height: 100px;
+    background-color: azure;
+    border: 5px solid #8b96cf;
+    opacity: 0.5;
+
+}
+
+.transform-origin__block:not(:last-child) {
+    margin-right: 20px;
+}
+
+.transform-origin__block:nth-of-type(1)::after {
+    transform-origin: top left;
+}
+
+.transform-origin__block:nth-of-type(1):hover::after {
+    transform: rotate(180deg);
+}
+
+
+.transform-origin__block:nth-of-type(2)::after {
+    transform-origin: bottom center;
+}
+
+.transform-origin__block:nth-of-type(2):hover::after {
+    transform: rotate(180deg);
+}
+
+
+.transform-origin__block:nth-of-type(3)::after {
+    transform-origin: 100% 100%;
+}
+
+.transform-origin__block:nth-of-type(3):hover::after {
+    transform: rotate(180deg);
+}
+
+.transform-origin__block:nth-of-type(4)::after {
+    transform-origin: 200% 200%;
+    transition-duration: 1.5s;
+}
+
+.transform-origin__block:nth-of-type(4):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(5)::after {
+    transform-origin: 200% 100%;
+    /* спостереження:  поставивши обертання на 180 градусів можна побачити, що кінцева позиція це координати top left але навпаки. Тобто тут "типу" 200% від лівої позиції та 100% від верхньої позиції*/
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(5):hover::after {
+    transform: rotate(180deg);
+}
+
+
+.transform-origin__block:nth-of-type(6)::after {
+    transform-origin: 100% 200%;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(6):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(7)::after {
+    transform-origin: 200%;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(7):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(8)::after {
+    transform-origin: -200%;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(8):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(9)::after {
+    transform-origin: 200% -200%;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(9):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(10)::after {
+    transform-origin: 30px -70px;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(10):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(11)::after {
+    transform-origin: 20px 20px;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(11):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(12)::after {
+    transform-origin: -20px -20px;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(12):hover::after {
+    transform: rotate(360deg);
+}
+
+.transform-origin__block:nth-of-type(13)::after {
+    transform-origin: 20px -20px;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(13):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(14)::after {
+    transform-origin: 100% -20px;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(14):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(15)::after {
+    transform-origin: 100% center;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(15):hover::after {
+    transform: rotate(360deg);
+}
+
+
+.transform-origin__block:nth-of-type(16)::after {
+    transform-origin: center 300%;
+    transition-duration: 1s;
+}
+
+.transform-origin__block:nth-of-type(16):hover::after {
+    transform: rotate(360deg);
+}
+
+
+
+
+.transform-3d__container {
+    background-color: #ff89f7;
+    border: 3px solid #000;
+    padding: 100px;
+    perspective: 1000px;
+}
+
+
+.cube {
+    display: inline-block;
+
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 60px;
+    transform-style: preserve-3d;
+    transition: transform 0.9s ease;
+    transform: rotate3d(1, 1, 0, 0deg);
+}
+
+.cube:not(:last-child) {
+    margin-right: 100px;
+}
+
+.cube:first-child:hover {
+    transform: rotate3d(0, 1, 1, 100deg);
+}
+
+.cube:nth-child(2) {
+    transform: rotate3d(1, 1, 1, 45deg);
+}
+
+.cube:nth-child(2):hover {
+    transform: rotate3d(1, 1, 1, 95deg) scale(2);
+}
+
+.cube:nth-child(3):hover {
+    transform: rotate3d(1, 1, 1, 360deg);
+}
+
+.cube:nth-child(4) {
+    transform-origin: 100% 100%;
+
+}
+
+.cube:nth-child(4):hover {
+    transform: rotate3d(1, 2, 1, 360deg);
+}
+
+.cube:nth-child(5) {
+    transform-origin: 200% 200%;
+
+}
+
+.cube:nth-child(5):hover {
+    transform: rotate3d(1, 2, 1, 360deg);
+}
+
+
+
+.cube:nth-child(6):hover {
+    transform: translateZ(300px) rotateX(-90deg);
+}
+
+
+.cube:nth-child(7):hover {
+    transform: rotateX(-90deg) translateZ(300px);
+}
+
+
+.cube:nth-child(8):hover {
+    transform: rotateY(-90deg) translateZ(300px);
+}
+
+
+
+.cube:nth-child(9):hover {
+    transform: translateZ(300px) rotateY(-90deg);
+}
+
+
+
+.cube:nth-child(10):hover {
+    transform: translateZ(300px) rotateZ(-90deg);
+}
+
+.cube:nth-child(11):hover {
+    transform: skewX(30deg);
+}
+
+.cube:nth-child(12):hover {
+    transform: skewY(30deg);
+}
+
+.cube:nth-child(13):hover {
+    transform: skew(35deg, 35deg);
+}
+
+.cube:nth-child(14):hover {
+    transform: skew(35deg, 35deg) rotateZ(60deg);
+}
+
+.cube:nth-child(14):hover {
+    transform: rotate3d(3, 2, 1, 90deg) translate3d(100px, 100px, 400px);
+}
+
+
+.cube:nth-child(15):hover {
+    transform: scale3d(1, -1, -1);
+}
+
+
+.cube:nth-child(16):hover {
+    transform: rotate3d(0.5, 0, 0, 90deg);
+}
+
+.cube:nth-child(17):hover {
+    transform: rotate3d(1, 1, 1, 90deg);
+}
+
+.cube:nth-child(18):hover {
+    transform: rotate3d(1, 0, 0, 90deg);
+    /* не побачив різниці з rotate3d(0.5, 0, 0, 90deg); Не можу зрозуміти суть зміни між 0 і 1*/
+}
+
+
+.cube:nth-child(19):hover {
+    transform: rotate3d(1, 0, 0, 90deg);
+}
+
+.face {
+    width: 200px;
+    height: 200px;
+    background: rgb(196, 255, 123);
+    border: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
+.front {
+    transform: translateZ(100px);
+}
+
+.back {
+    transform: translateZ(-100px);
+}
+
+.top {
+    transform: translateY(-100px) rotate3d(1, 0, 0, 90deg) scaleY(-1);
+}
+
+.bottom {
+    transform: translateY(100px) rotate3d(1, 0, 0, 90deg) scaleY(-1);
+}
+
+.right {
+    transform: translateX(100px) rotate3d(0, 1, 0, 90deg);
+}
+
+.left {
+    transform: translateX(-100px) rotate3d(0, 1, 0, 90deg);
+}
+
+.f1__container {
+    position: relative;
+   perspective: 1000px;
+   height: 1000px;
+   width: 1000px;
+   margin: 0 auto;
+
+}
+
+.body-f1{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 100px;
+    height: 100px;
+  
+    transform-style: preserve-3d;
+   
+ transform: rotateX(-45deg) rotateY(-1deg) scaleY(0.2) scaleX(1.5) scaleZ(3) translateY(-100px);
+}
+.body-f1 > *{
+    width: 200px;
+    height: 200px;
+    background: rgb(253, 0, 0);
+    border: 5px solid black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+.body-f1__front {
+    transform: translateZ(100px);
+}
+.body-f1__back {
+    transform: translateZ(-100px);
+}
+.body-f1__left {
+    transform: translateX(-100px) rotate3d(0, 1, 0, 90deg);
+}
+.body-f1__right {
+    transform: translateX(100px) rotate3d(0, 1, 0, 90deg);
+}
+.body-f1__top {
+    transform: translateY(-100px) rotate3d(1, 0, 0, 90deg) scaleY(-1);
+}
+.body-f1__bottom {
+    transform: translateY(100px) rotate3d(1, 0, 0, 90deg) scaleY(-1);
+}
+
+
+.wheel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    /* background-color: #000; */
+    border-radius: 100% / 80px;
+    background: 
+    radial-gradient(50% 40px at 50% 40px, #0003 100%, #0000 0) ,
+    radial-gradient(50% 40px at 50% calc(100% - 40px), #fff3 100%, #0000 0),
+    rgb(49, 32, 32);
+    z-index: -1;
+    
+}
+
+
+.f1__front-right-wheel {
+    top: 50%;
+    left: 40%;
+    transform: rotateZ(-90deg) translateZ(230px) translateY(60px);
+    /* z-index: 1; */
+}
+.f1__front-left-wheel {
+    top: 50%;
+    transform: rotateZ(-90deg) translateZ(200px) translateY(20px);
+  
+}
+.f1__back-right-wheel {
+    left: 50%;
+    transform: rotateZ(-90deg) translateZ(-430px);
+}
+.f1__back-left-wheel {
+    transform: rotateZ(-90deg) translateZ(-400px);
+    z-index: -1;
+}
+
+.page__transform {
+    height: 400px;
+    background-color: #d66339;
+    padding: 50px;
+}
+
+.transform__block {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #6ad7ff52;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+.transform__block::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background-color: #2d3d42;
+    transition: transform 1s ease;
+}
+.transform__block:hover::after {
+   
+    transform: rotateX(360deg);
+}
+
+.page__backface {
+    height: 400px;
+    background-color: #7cbab5;
+    padding: 50px;
+}
+
+.backface__block {
+    width: 200px;
+    height: 200px;
+    background-color: #2d3d425e;
+    position: relative;
+    margin: 0 auto;
+}
+.backface__block::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #2d3d42;
+    transition: transform 0.5s ease;
+    backface-visibility: hidden;
+}
+.backface__block::before {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #2d3d42;
+    transition: transform 0.5s ease;
+    background-color: #fff;
+
+}
+.backface__block:hover::after, .backface__block:hover::before {
+    transform: rotateY(180deg);
+}
